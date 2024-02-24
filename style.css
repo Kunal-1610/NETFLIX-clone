@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
+    sans-serif;
+}
+body {
+  background: black;
+}
+
+.main {
+  background-image: url(assets/bg.jpg);
+  /* height: 85vh;
+  width: 100%;
+  position: relative;
+  background-size: max(1200px, 100vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center; */
+  background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+.main .box {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+    to top,
+    rgb(3 0 0 / 92%) 0,
+    rgba(0, 0, 0, 28%) 100%,
+    rgb(0 0 0 / 92%) 100%
+  );
+}
+nav {
+  max-width: 80vw;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  height: 100px;
+  padding: 20px 0;
+}
+nav img {
+  color: red;
+  z-index: 10;
+  width: 130px;
+  position: relative;
+}
+nav button,
+select {
+  z-index: 10;
+  position: relative;
+}
+.welcome {
+  font-family: "Martel Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  height: calc(100% - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-weight: 400;
+  position: relative;
+  padding: 0 30px;
+  text-align: center;
+  gap: 20px;
+}
+.welcome h1 {
+  font-size: 44px;
+  text-align: center;
+  font-weight: 900;
+}
+form {
+  width: 80vw;
+}
+.email {
+  width: 20%;
+  height: 2vh;
+  color: white;
+  filter: opacity(100%);
+  border: 0.5px solid rgb(83, 83, 83);
+  background-color: rgba(27, 27, 27, 0.671);
+  border-radius: 5px;
+  padding: 0.9rem 1rem 0.9rem;
+
+  /* border: none; */
+}
+.seperation {
+  height: 8px;
+  background-color: rgb(42, 41, 41);
+  position: relative;
+  z-index: 10;
+}
+.btn {
+  padding: 8px 15px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+}
+.btn-red {
+  color: white;
+  background-color: rgb(228, 8, 20);
+  border: none;
+  border-radius: 5px;
+}
+select {
+  background-color: rgba(27, 27, 27, 0.671);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+option {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.btn-submit {
+  /* width: 12%;
+  padding: 15px 8px 15px 8px;
+  /* padding: .9rem 1rem .9rem; */
+  height: 7vh;
+  text-align: center;
+  font-weight: bolder; 
+  background-color: red;
+  color: white;
+}
+.first{
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.secImg{
+  position: relative;
+}
+.secImg img{
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+.secImg video{
+position: absolute;
+top: 85px;
+left:75px ;
+width: 400px;
+}
+.first h2{
+  font-size: 48px;
+  font-weight: 900;
+}
+.second{
+  padding-bottom: 50px;
+
+}
+.third video{
+  position: absolute;
+  top: 33px;
+  left: 101px;
+  width: 350px;
+}
+.FAQs{
+  flex-direction: column;
+  gap: 7px;
+  margin-top:50px;
+  padding-bottom: 50px;
+  transition: all 2s ease-in-out .5s;
+}
+.FAQs .faq-btn{
+  /* position: absolute; */
+  width: 80%;
+  height: 7.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  color: rgb(225, 225, 225);
+  filter: opacity(100%);
+  border: 0.5px solid rgb(0, 0, 0);
+  background-color: #2d2d2d;
+  border-radius: 5px;
+}
+.FAQs button:hover{
+  transition: all  ease .5s;
+  background-color: rgb(41, 41, 41);
+}
+.FAQs h1:hover{
+  background: none;
+}
+.FAQs span{
+  padding: 5px ;
+  /* background-color: blueviolet; */
+  display: inline;
+  font-size: small;
+  font-weight: 400;
+}
+.FAQs h1{
+  /* background-color: red; */
+  font-weight: lighter;
+}
+footer{
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  font-size: 13px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  padding-top: 15px;
+}
+.footer-items{
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+  gap: 10px;
+}
+.footer a{
+  color: white;
+}
+footer select{
+  margin: 24px 0px 10px 0px;
+}
+
