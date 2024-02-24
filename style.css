@@ -11,18 +11,11 @@ body {
 
 .main {
   background-image: url(assets/bg.jpg);
-  /* height: 85vh;
-  width: 100%;
-  position: relative;
+  background-position: center center;
   background-size: max(1200px, 100vw);
-  background-position: center center;
   background-repeat: no-repeat;
-  text-align: center; */
-  background-position: center center;
-    background-size: max(1200px, 100vw);
-    background-repeat: no-repeat;
-    height: 644px;
-    position: relative;
+  height: 644px;
+  position: relative;
 }
 .main .box {
   height: 100%;
@@ -43,7 +36,7 @@ nav {
   justify-content: space-between;
   display: flex;
   height: 100px;
-  padding: 20px 0;
+  padding: 20px;
 }
 nav img {
   color: red;
@@ -77,10 +70,14 @@ select {
   font-weight: 900;
 }
 form {
-  width: 80vw;
+  display: flex;
+  justify-content: center
+  width: 110%;
+  gap:10px;
+  flex-wrap: wrap;
 }
 .email {
-  width: 20%;
+  width: 50%;
   height: 2vh;
   color: white;
   filter: opacity(100%);
@@ -88,11 +85,9 @@ form {
   background-color: rgba(27, 27, 27, 0.671);
   border-radius: 5px;
   padding: 0.9rem 1rem 0.9rem;
-
-  /* border: none; */
 }
 .seperation {
-  height: 8px;
+  height: 7px;
   background-color: rgb(42, 41, 41);
   position: relative;
   z-index: 10;
@@ -117,6 +112,7 @@ select {
   border-radius: 5px;
   font-weight: bold;
   padding: 0 20px;
+  display: inline;
 }
 option {
   background-color: white;
@@ -124,16 +120,13 @@ option {
   font-weight: bold;
 }
 .btn-submit {
-  /* width: 12%;
-  padding: 15px 8px 15px 8px;
-  /* padding: .9rem 1rem .9rem; */
   height: 7vh;
   text-align: center;
-  font-weight: bolder; 
+  font-weight: bolder;
   background-color: red;
   color: white;
 }
-.first{
+.first {
   display: flex;
   justify-content: center;
   max-width: 70vw;
@@ -142,43 +135,43 @@ option {
   justify-content: center;
   align-items: center;
 }
-.secImg{
+
+.secImg {
   position: relative;
 }
-.secImg img{
+.secImg img {
   width: 555px;
   position: relative;
   z-index: 10;
 }
-.secImg video{
-position: absolute;
-top: 85px;
-left:75px ;
-width: 400px;
+.secImg video {
+  position: absolute;
+  top: 85px;
+  left: 75px;
+  width: 400px;
 }
-.first h2{
+.first h2 {
   font-size: 48px;
   font-weight: 900;
+  padding: 34px 0;
 }
-.second{
+.second {
   padding-bottom: 50px;
-
 }
-.third video{
+.third video {
   position: absolute;
   top: 33px;
   left: 101px;
   width: 350px;
 }
-.FAQs{
+.FAQs {
   flex-direction: column;
   gap: 7px;
-  margin-top:50px;
+  margin-top: 50px;
   padding-bottom: 50px;
-  transition: all 2s ease-in-out .5s;
+  transition: hover 2s ease-in-out 0.5s;
 }
-.FAQs .faq-btn{
-  /* position: absolute; */
+.FAQs .faq-btn {
   width: 80%;
   height: 7.5vh;
   display: flex;
@@ -191,48 +184,96 @@ width: 400px;
   background-color: #2d2d2d;
   border-radius: 5px;
 }
-.FAQs button:hover{
-  transition: all  ease .5s;
+.FAQs button:hover {
+  transition: all ease 0.5s;
   background-color: rgb(41, 41, 41);
 }
-.FAQs h1:hover{
+.FAQs h1:hover {
   background: none;
 }
-.FAQs span{
-  padding: 5px ;
-  /* background-color: blueviolet; */
+.FAQs span {
+  padding: 5px;
   display: inline;
   font-size: small;
   font-weight: 400;
 }
-.FAQs h1{
-  /* background-color: red; */
+.FAQs h1 {
   font-weight: lighter;
 }
-footer{
+footer {
   max-width: 80vw;
   margin: auto;
   color: white;
   font-size: 13px;
   padding-top: 5%;
   padding-bottom: 10%;
-
 }
-.footer{
+.footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 15px;
 }
-.footer-items{
+
+.footer-items {
   display: flex;
   flex-direction: column;
   text-decoration: underline;
   gap: 10px;
 }
-.footer a{
+.footer a {
   color: white;
 }
-footer select{
+footer select {
   margin: 24px 0px 10px 0px;
 }
-
+@media screen and (max-width: 1300px) {
+  .welcome h1{
+    font-size: 32px;
+  }
+  nav{
+    max-width: 90%;
+  }
+  form{
+    justify-content: center;
+  }
+  .email{
+    width: 50%;
+  }
+  .btn-submit{
+    width: 40%;
+    margin-top: 10px;
+    padding: 0px 20px;
+  }
+  .first {
+    flex-wrap: wrap;
+  }
+  .first h2 {
+    padding: 20px 0;
+  }
+  .secImg img {
+    width: 305px;
+    position: relative;
+    z-index: 10;
+  }
+  .secImg video {
+    position: absolute;
+    top: 47px;
+    left: 38px;
+    width: 254px;
+  }
+  .third video{
+    position: absolute;
+    top: 11px;
+    left: 54px;
+    width: 197px;
+  }
+  .seperation{
+    height: 4px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15px;
+    gap: 25px;
+  }
+}
