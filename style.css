@@ -71,7 +71,7 @@ select {
 }
 form {
   display: flex;
-  justify-content: center
+  justify-content: center;
   width: 110%;
   gap:10px;
   flex-wrap: wrap;
